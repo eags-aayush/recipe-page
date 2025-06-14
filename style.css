@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    background-color: #f3e5d8;
+}
+
+body{
+    height: 225vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #898182;
+    font-family: "Outfit", serif;
+}
+
+main{
+    background-color: #fff;
+    padding: 30px;
+    width: 42vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+strong{
+    color: #71686d;
+}
+
+img{
+    border-radius: 20px;
+}
+
+h1{
+    font-size: xx-large;
+    color: #2e2b29;
+    font-weight: 500;
+    font-family: "Young Serif", serif;
+}
+
+p{
+    font-size:small;
+    font-weight: 500;
+}
+
+#image{
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+#desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border: none;
+}
+
+.preparation{
+    background-color: #fff7fc;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.preparation>span{
+    font-weight: 500;
+    font-size: 18px;
+    color: #652e47;
+}
+
+ul, ol{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.ingredients>span, #instructions>span, #nutrition>span{
+    font-family: "Young Serif", serif;
+    font-size: 22px;
+    color: #734132;
+}
+
+#nutrition{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+}
+
+tr{ 
+    border-top: 1px solid #e4e4e4;
+}
+
+section{
+    width: 100%;
+    padding-top: 25px;
+    border-top: 1px solid #e4e4e4;
+}
+
+li{
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+li::marker{
+    color:#652e47;
+    font-weight: bold;
+}
+
+.nutrient{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nutrient>div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e4e4e4;
+    padding: 10px;
+}
+
+.nutrient>div:first-child{
+    border: none;
+}
+
+.nutrient>div>span{
+    width: 50%;
+}
+
+.nutrient>div>span:last-child{
+    color:#652e47;
+    font-weight: 700;
+}
+
+@media (max-width:375px){
+    body{
+        height: 100vh;
+        display:block;
+    }
+
+    main{
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+    }
+}
